@@ -33,7 +33,6 @@ body {
 	font-size: 4vh;
 	align-items: center;
 	border-radius: 15px;
-	/* border: 1px solid #fff; */
 	background-color: #2f477a;
 }
 
@@ -54,13 +53,11 @@ body {
 	color: #5a5e5f;
 }
 .characterInfo {
-	height: 550px;
+	height: 600px;
 	padding: 30px;
 	font-size: 24px;
 	border: 2px dashed #333;
 	text-align: center;
-
-
 }
 
 input[type="submit"],
@@ -112,4 +109,12 @@ input[type="text"] {
 #reset-btn:hover {
 	background-color: #2f477a;
 	color: #fff;
+}
+
+#votes-form input[type="submit"] {
+	margin-top: 20px;
+}
+
+#reset-btn {
+	margin-top: 10px;
 }
