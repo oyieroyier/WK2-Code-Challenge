@@ -13,7 +13,7 @@ resetVotes.style.fontFamily = "'Roboto Mono', monospace";
 
 // endpoint for fetch data
 function getCharacters() {
-	fetch("http://localhost:3000/characters/")
+	fetch("https://api.npoint.io/335752306c8659234a70/characters/")
 		.then((response) => response.json())
 		.then(renderAnimals);
 }
