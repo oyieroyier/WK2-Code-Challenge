@@ -17,6 +17,7 @@ This code challenge has been handled using JavaScript.
 In order for you to use the content on this repo ensure you have the following:
 
 - A computer running on either Windows 7+, Linux or Mac OS.
+- A Terminal/Command Line Interphase.
 - Mozilla Firefox, Safari or any Chromium-based browser.
 
 ## Installation
