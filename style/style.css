@@ -16,6 +16,11 @@ body {
 	margin: 5px;
 }
 
+.logo .smaller-header {
+	font-family: "Solway", serif;
+	font-size: 25px;
+}
+
 #character-bar {
 	height: 15vh;
 	display: flex;
