@@ -1,6 +1,5 @@
 // Your code here
 const character = document.getElementById("character-bar");
-// const container = document.getElementById("detailed-info");
 const animalName = document.getElementById("name");
 const image = document.getElementById("image");
 const form = document.getElementById("votes-form");
