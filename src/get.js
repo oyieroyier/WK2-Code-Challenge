@@ -10,23 +10,22 @@ let currentAnimal;
 resetVotes.style.cursor = "pointer";
 resetVotes.style.fontFamily = "'Roboto Mono', monospace";
 
-
-function getCharacters() {
+function getTheCharacters() {
 	fetch("https://api.npoint.io/335752306c8659234a70/characters/")
 		.then((response) => response.json())
-		.then(renderAnimals);
+		.then(showTheAnimals);
 }
 
-function renderAnimals(animals) {
-	animals.forEach(renderCharacters);
+function showTheAnimals(animals) {
+	animals.forEach(showTheCharacters);
 }
 
-function renderCharacters(animal) {
-	const spanEle = document.createElement("span");
-	spanEle.innerHTML = animal.name;
-	spanEle.style.cursor = "pointer";
-	character.appendChild(spanEle);
-	spanEle.addEventListener("click", () => {
+function showTheCharacters(animal) {
+	const newSpan = document.createElement("span");
+	newSpan.innerHTML = animal.name;
+	newSpan.style.cursor = "pointer";
+	character.appendChild(newSpan);
+	newSpan.addEventListener("click", () => {
 		currentAnimal = animal;
 		showAnimal(animal);
 	});
@@ -37,7 +36,7 @@ function showAnimal(animal) {
 	image.src = animal.image;
 	animalVotes.innerHTML = animal.votes;
 }
-getCharacters();
+getTheCharacters();
 
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
