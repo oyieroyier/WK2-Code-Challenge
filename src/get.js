@@ -11,18 +11,17 @@ let currentAnimal;
 resetVotes.style.cursor = "pointer";
 resetVotes.style.fontFamily = "'Roboto Mono', monospace";
 
-// endpoint for fetch data
+
 function getCharacters() {
 	fetch("https://api.npoint.io/335752306c8659234a70/characters/")
 		.then((response) => response.json())
 		.then(renderAnimals);
 }
-// function that accesses the payload
+
 function renderAnimals(animals) {
 	animals.forEach(renderCharacters);
 }
 
-// function that accesses individual payload elements and show their required data
 function renderCharacters(animal) {
 	const spanEle = document.createElement("span");
 	spanEle.innerHTML = animal.name;
@@ -34,7 +33,6 @@ function renderCharacters(animal) {
 	});
 }
 
-// A function that dsplays curated data about the animal in question
 function showAnimal(animal) {
 	animalName.innerHTML = animal.name;
 	image.src = animal.image;
